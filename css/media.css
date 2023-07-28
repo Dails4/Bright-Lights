@@ -1,0 +1,107 @@
+@media (max-width: 1300px) {
+    .concert-item:last-child {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .news-row {
+        flex-wrap: wrap;
+    }
+    .about-content {
+        flex-wrap: wrap;
+    }
+    .about-img {
+        padding-top: 40px;
+        padding-left: 80px;
+    }
+    .rewarding-img {
+        right: 30px;
+    }
+    .collage-list {
+        flex-wrap: wrap;
+        width: 700px;
+        margin: 0 auto;
+    }
+    .right-collage {
+        order: -1;
+    }
+    .concert-list {
+        flex-wrap: wrap;
+    }  
+}
+
+@media (max-width: 1000px) {
+    .nav-item {
+        display: none;
+    }
+    .nav-btn {
+        display: block;
+    }
+    .mobile-nav_active{
+        display: block;
+    }
+    .about {
+        padding: 120px 0;
+    }
+    .rewarding-content {
+        padding: 30px 40px;
+    }
+    .rewarding-text {
+        max-width: 520px;
+        padding-right: 30px;
+    }
+    .rewarding-img {
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+    .tracks {
+        padding: 120px 0;
+    }
+    .tracks-content {
+        flex-wrap: wrap;
+    }
+    .collage {
+        padding-bottom: 120px;
+    }
+    .collage-list {
+        width: 550px;
+    }
+    .concert {
+        padding-bottom: 120px;
+    }
+}
+@media (max-width: 780px) {
+    /* .rewarding-content {
+        flex-wrap: wrap;
+        justify-content: center;
+    } */
+    .rewarding-img img {
+       display: none;
+    }
+}
+@media (max-width: 560px) {
+    .time {
+        display: none;
+    }
+    .collage-list {
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+    }
+    .middle-collage {
+        flex-direction: column;
+        align-items: center;
+        max-width: 80%;
+        gap: 30px;
+    }
+    .collage-item:nth-child(2){
+        padding-left: 0px;
+        padding-bottom: 0px;
+    }
+    .concert {
+        column-gap: 10px;
+    }
+
+}
