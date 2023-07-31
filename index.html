@@ -42,12 +42,13 @@
     <header class="header">
         <div class="container">
             <div class="header-content">
-                <div class="header-sub">New Single</div>
-                <div class="header-title">War For Love</div>
+                <h2 class="header-sub">New Single</h2>
+                <h1 class="header-title">War For Love</h1>
                 <div class="audio">
-                    <div class="audio-btn"><img class="img-src" src="./img/play.svg" alt="play"></div>
-                    <div class="progress-container">
-                        <div class="progress"></div>
+                    <audio src="./audio/Wolves - Kanye West.mp3"></audio>
+                    <button class="audio-btn"><img class="img-src" src="./img/play.svg" alt="play"></button>
+                    <div class="progress-container audio-container">
+                        <div class="progress audio-progress"></div>
                     </div>
                     <div class="time">00:00-02:30</div>
                 </div>
@@ -58,24 +59,24 @@
         <section class="news" id="news">
             <div class="container">
                 <div class="news-row">
-                    <div class="news-item">
-                        <img src="./img/news1.jpg" alt="" class="border">
+                    <a href="#music" class="news-item">
+                        <img src="./img/news1.jpg" alt="newsImg" class="border">
                         <div class="news-text border">Working on my upcoming full-lenth
                             album that`s releasing later this year.
                         </div>
-                    </div>
-                    <div class="news-item">
-                        <img src="./img/news2.jpg" alt="" class="border">
+                    </a>
+                    <a href="#music" class="news-item">
+                        <img src="./img/news2.jpg" alt="newsImg" class="border">
                         <div class="news-text border">Halloween vibes. 
                             Listen my new track!
                         </div>
-                    </div>
-                    <div class="news-item">
-                        <img src="./img/news3.png" alt="" class="border">
+                    </a>
+                    <a href="#music" class="news-item">
+                        <img src="./img/news3.png" alt="newsImg" class="border">
                         <div class="news-text border">WarForLove is OUT NOW!! 
                             Stream it here!
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -94,7 +95,7 @@
                             <li class="about-list-item">Label: 333 Recordings</li>
                         </ul>
                     </div>
-                    <div class="about-img"><img src="./img/about.png" alt=""></div>
+                    <div class="about-img"><img src="./img/about.png" alt="photo"></div>
                 </div>
             </div>
         </section>
@@ -108,7 +109,7 @@
                             but complex enough to separate her from other pop newcomers.”</p>
                         <a href="https://populove.net/" target="_blank">PopULove.net</a>
                     </div>
-                    <div class="rewarding-img"><img src="/img/rewarding.png" alt=""></div>
+                    <div class="rewarding-img"><img src="/img/rewarding.png" alt="MTV-show"></div>
                 </div>
             </div>
         </section>
@@ -119,10 +120,10 @@
                     <div class="tracks-text">
                         <h2 class="tracks-title"><img src="/img/equalizer.svg" alt="icon">Last tracks</h2>
                         <div class="audio">
-                            <audio src="./audio/Wolves - Kanye West.mp3"></audio>
-                            <div class="audio-btn"><img class="img-src" src="./img/play.svg" alt="play"></div>
-                            <div class="tracks-progress-container">
-                                <div class="tracks-progress"></div>
+                            
+                            <button class="audio-btn"><img class="img-src" src="./img/play.svg" alt="play"></button>
+                            <div class="tracks-progress-container audio-container">
+                                <div class="tracks-progress audio-progress"></div>
                             </div>
                             <div class="time">00:00-02:30</div>
                         </div>
@@ -136,8 +137,8 @@
                         </ul>
                         <div class="tracks-links">
                             <div class="tracks-link-title">Follow me:</div>
-                            <a href="https://open.spotify.com/" target="_blank" ><div class="tracks-spotify"><img src="./img/spotify.svg" alt="">Spotify</div></a>
-                            <a href="https://www.apple.com/ru/itunes/" target="_blank"><div class="tracks-itunes"><img src="./img/apple.svg" alt="">iTunes</div></a>
+                            <a href="https://open.spotify.com/" target="_blank" ><div class="tracks-spotify"><img src="./img/spotify.png" alt="">Spotify</div></a>
+                            <a href="https://www.apple.com/ru/itunes/" target="_blank"><div class="tracks-itunes"><img src="./img/apple.png" alt="">iTunes</div></a>
                         </div>
                     </div>
                 </div>
@@ -161,8 +162,8 @@
             </div>
         </section>
         <section class="concert" id="concerts">
-            <img class="prev-btn" src="./img/leftArrow.svg" alt="">
-            
+            <button class="prev-btn"><img src="./img/leftArrow.svg" alt=""></button>
+                <div class="slider">
                 <ul class="concert-list">
                     <li class="concert-item border">
                         <img src="img/concert1.png" alt="">
@@ -197,12 +198,64 @@
                             </div>
                         </div>
                     </li>
+                    <li class="concert-item border">
+                        <img src="img/concert2.png" alt="">
+                        <div class="concert-text">
+                            <div class="concert-place">Ibiza, IBZ</div>
+                            <div class="concert-name">Swag Ibiza Club</div>
+                            <div class="concert-footer">
+                                <div class="concert-date">Jul 08 2021</div>
+                                <div class="concert-book border">tickets</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="concert-item border">
+                        <img src="img/concert1.png" alt="">
+                        <div class="concert-text">
+                            <div class="concert-place">Chandler, AZ</div>
+                            <div class="concert-name">The Park at Wild Horse Pass</div>
+                            <div class="concert-footer">
+                                <div class="concert-date">Apr 02 2021</div>
+                                <div class="concert-book border">tickets</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="concert-item border">
+                        <img src="img/concert3.png" alt="">
+                        <div class="concert-text">
+                            <div class="concert-place">Ibiza, IBZ</div>
+                            <div class="concert-name">El Swing Ibiza</div>
+                            <div class="concert-footer">
+                                <div class="concert-date">Jul 10 2021</div>
+                                <div class="concert-book border">tickets</div>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
-           
-            <img class="next-btn" src="./img/rightArrow.svg" alt="">
-        </section>
-        <footer class="footer" id="contacts">
-            <div class="container">
+            </div>
+            
+            <button class="next-btn"><img src="./img/rightArrow.svg" alt=""></button>
+        </div>
+        <div class="popup-wrap">
+            <div class="popup border">
+                    <img class="img-popup" src="./img/concert1.png" alt="">
+                    <div class="popup-text">
+                        <div class="popup-name">The Park at Wild Horse Pass</div>
+                        <div class="popup-place">Chandler, AZ</div>
+                        <div class="popup-date">Apr 02 2021</div>
+                        <div class="text-input">Your E-mail: <input type="email" class="popup-input " placeholder="E-mail"></div>
+                        <div class="text-input">Number of tickets:<input type="text" class="popup-input" placeholder="Number of tickets"></div>
+                        <div class="popup-payment">
+                            <input type="text" class="popup-input" placeholder="Total price" disabled>
+                            <button class="popup-book border">Pay</button>
+                        </div>
+                    </div>
+                    <button class="popup-close">Close</button>
+            </div>
+    </section>
+    
+    <footer class="footer" id="contacts">
+        <div class="container">
                 <div class="footer-content">
                     <div class="logo"><img src="img/logo.png" alt=""></div>
                     <div class="contacts">
@@ -227,5 +280,3 @@
 </body>
 </html>
 
-
-<!-- <img src="img/cursor.png" alt=""> -->
