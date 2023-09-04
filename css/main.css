@@ -164,7 +164,7 @@ body {
     transform: scale(1.2);
 }
 .progress-container {
-    width: 887px;
+    width: 100%;
 }
 .audio-container {
     height: 2px;
@@ -186,7 +186,7 @@ body {
     transform: scaleY(1.3);
 }
 .time {
-    width: 80px;
+    width: 100px;
     white-space: nowrap;
 }
 
@@ -261,7 +261,7 @@ body {
 }
 .about-list-item {
     padding-left: 50px;  
-    background-image: url('/img/listStyle.svg') ; 
+    background-image: url(../img/listStyle.svg) ; 
     background-repeat: no-repeat;  
     background-position: center left; 
     font-size: 18px;

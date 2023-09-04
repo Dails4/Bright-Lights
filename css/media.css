@@ -146,6 +146,13 @@
         padding-left: 0px;
         padding-bottom: 0px;
     }
+    .video {
+        padding-top: 60px;
+    }
+    .video-title {
+        padding-bottom: 60px;
+        font-size: 30px;
+    }
     .concert {
         padding: 100px 10px;
         column-gap: 10px;
