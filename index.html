@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Bright Lights</title>
 </head>
 <body>
     <nav class="nav">
         <div class="container">
             <div class="nav-content">
-                <div class="nav-logo"><img src="./img/logo.png" alt="logo"></div>
+                <div class="nav-logo"><img data-aos="flip-left" data-aos-duration="2000" src="./img/logo.png" alt="logo"></div>
                 <ul class="naw-row">
                     <li class="nav-item"><a href="#about">About</a></li>
                     <li class="nav-item"><a href="#news">News</a></li>
@@ -109,18 +109,17 @@
                             but complex enough to separate her from other pop newcomers.”</p>
                         <a href="https://populove.net/" target="_blank">PopULove.net</a>
                     </div>
-                    <div class="rewarding-img"><img src="/img/rewarding.png" alt="MTV-show"></div>
+                    <div class="rewarding-img"><img data-aos="flip-left" data-aos-duration="1000" src="./img/rewarding.png" alt="MTV-show"></div>
                 </div>
             </div>
         </section>
         <section class="tracks" id="music">
             <div class="container">
                 <div class="tracks-content">
-                    <div class="tracks-img"><img src="/img/music.png" alt=""></div>
+                    <div class="tracks-img"><img src="./img/music.png" alt="dj picture"></div>
                     <div class="tracks-text">
-                        <h2 class="tracks-title"><img src="/img/equalizer.svg" alt="icon">Last tracks</h2>
+                        <h2 class="tracks-title"><img src="./img/equalizer.svg" alt="icon">Last tracks</h2>
                         <div class="audio">
-                            
                             <button class="audio-btn"><img class="img-src" src="./img/play.svg" alt="play"></button>
                             <div class="tracks-progress-container audio-container">
                                 <div class="tracks-progress audio-progress"></div>
@@ -148,97 +147,102 @@
             <div class="container">
                 <ul class="collage-list">
                     <div class="left-collage">
-                        <li class="collage-item"><img src="./img/collage1.png" alt=""></li>
+                        <li class="collage-item"><img data-aos="fade-right" data-aos-duration="1000" src="./img/collage1.png" alt="picture from ig"></li>
                     </div>
                     <div class="middle-collage">
-                        <li class="collage-item"><img src="./img/collage2.png" alt=""></li>
-                        <li class="collage-item"><img src="./img/collage4.png" alt=""></li>
-                        <li class="collage-item"><img src="./img/collage3.png" alt=""></li>
+                        <li class="collage-item"><img src="./img/collage2.png" alt="picture from ig"></li>
+                        <li class="collage-item"><img src="./img/collage4.png" alt="picture from ig"></li>
+                        <li class="collage-item"><img src="./img/collage3.png" alt="picture from ig"></li>
                     </div>
                     <div class="right-collage">
-                        <li class="collage-item"><img src="./img/collage5.png" alt=""></li>
+                        <li class="collage-item"><img data-aos="fade-left" data-aos-duration="1000" src="./img/collage5.png" alt="picture from ig"></li>
                     </div>
                 </ul>
             </div>
         </section>
-        <section class="concert" id="concerts">
-            <button class="prev-btn"><img src="./img/leftArrow.svg" alt=""></button>
-                <div class="slider">
-                <ul class="concert-list">
-                    <li class="concert-item border">
-                        <img src="img/concert1.png" alt="">
-                        <div class="concert-text">
-                            <div class="concert-place">Chandler, AZ</div>
-                            <div class="concert-name">The Park at Wild Horse Pass</div>
-                            <div class="concert-footer">
-                                <div class="concert-date">Apr 02 2021</div>
-                                <div class="concert-book border">tickets</div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="concert-item border">
-                        <img src="img/concert2.png" alt="">
-                        <div class="concert-text">
-                            <div class="concert-place">Ibiza, IBZ</div>
-                            <div class="concert-name">Swag Ibiza Club</div>
-                            <div class="concert-footer">
-                                <div class="concert-date">Jul 08 2021</div>
-                                <div class="concert-book border">tickets</div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="concert-item border">
-                        <img src="img/concert3.png" alt="">
-                        <div class="concert-text">
-                            <div class="concert-place">Ibiza, IBZ</div>
-                            <div class="concert-name">El Swing Ibiza</div>
-                            <div class="concert-footer">
-                                <div class="concert-date">Jul 10 2021</div>
-                                <div class="concert-book border">tickets</div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="concert-item border">
-                        <img src="img/concert2.png" alt="">
-                        <div class="concert-text">
-                            <div class="concert-place">Ibiza, IBZ</div>
-                            <div class="concert-name">Swag Ibiza Club</div>
-                            <div class="concert-footer">
-                                <div class="concert-date">Jul 08 2021</div>
-                                <div class="concert-book border">tickets</div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="concert-item border">
-                        <img src="img/concert1.png" alt="">
-                        <div class="concert-text">
-                            <div class="concert-place">Chandler, AZ</div>
-                            <div class="concert-name">The Park at Wild Horse Pass</div>
-                            <div class="concert-footer">
-                                <div class="concert-date">Apr 02 2021</div>
-                                <div class="concert-book border">tickets</div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="concert-item border">
-                        <img src="img/concert3.png" alt="">
-                        <div class="concert-text">
-                            <div class="concert-place">Ibiza, IBZ</div>
-                            <div class="concert-name">El Swing Ibiza</div>
-                            <div class="concert-footer">
-                                <div class="concert-date">Jul 10 2021</div>
-                                <div class="concert-book border">tickets</div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+        <section class="video">
+            <div class="container">
+                <div class="video-title">You can listen to us</div>
+                <video class="video-player" autoplay muted loop controls src="./video/Bright Lights.mp4"></video>
             </div>
-            
-            <button class="next-btn"><img src="./img/rightArrow.svg" alt=""></button>
+        </section>
+        <section class="concert" id="concerts">
+            <button class="prev-btn" disabled><img src="./img/leftArrow.svg" alt="left arrow"></button>
+                <div class="slider">
+                    <ul class="concert-list">
+                        <li class="concert-item border">
+                            <img src="./img/concert1.png" alt="concert">
+                            <div class="concert-text">
+                                <div class="concert-place">Chandler, AZ</div>
+                                <div class="concert-name">The Park at Wild Horse Pass</div>
+                                <div class="concert-footer">
+                                    <div class="concert-date">Apr 02 2021</div>
+                                    <div class="concert-book border">tickets</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="concert-item border">
+                            <img src="./img/concert2.png" alt="concert">
+                            <div class="concert-text">
+                                <div class="concert-place">Ibiza, IBZ</div>
+                                <div class="concert-name">Swag Ibiza Club</div>
+                                <div class="concert-footer">
+                                    <div class="concert-date">Jul 08 2021</div>
+                                    <div class="concert-book border">tickets</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="concert-item border">
+                            <img src="./img/concert3.png" alt="concert">
+                            <div class="concert-text">
+                                <div class="concert-place">Ibiza, IBZ</div>
+                                <div class="concert-name">El Swing Ibiza</div>
+                                <div class="concert-footer">
+                                    <div class="concert-date">Jul 10 2021</div>
+                                    <div class="concert-book border">tickets</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="concert-item border">
+                            <img src="./img/concert2.png" alt="concert">
+                            <div class="concert-text">
+                                <div class="concert-place">Ibiza, IBZ</div>
+                                <div class="concert-name">Swag Ibiza Club</div>
+                                <div class="concert-footer">
+                                    <div class="concert-date">Jul 08 2021</div>
+                                    <div class="concert-book border">tickets</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="concert-item border">
+                            <img src="./img/concert1.png" alt="concert">
+                            <div class="concert-text">
+                                <div class="concert-place">Chandler, AZ</div>
+                                <div class="concert-name">The Park at Wild Horse Pass</div>
+                                <div class="concert-footer">
+                                    <div class="concert-date">Apr 02 2021</div>
+                                    <div class="concert-book border">tickets</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="concert-item border">
+                            <img src="./img/concert3.png" alt="concert">
+                            <div class="concert-text">
+                                <div class="concert-place">Ibiza, IBZ</div>
+                                <div class="concert-name">El Swing Ibiza</div>
+                                <div class="concert-footer">
+                                    <div class="concert-date">Jul 10 2021</div>
+                                    <div class="concert-book border">tickets</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            <button class="next-btn"><img src="./img/rightArrow.svg" alt="right arrow"></button>
         </div>
         <div class="popup-wrap">
             <div class="popup border">
-                    <img class="img-popup" src="./img/concert1.png" alt="">
+                    <img class="img-popup" src="./img/concert1.png" alt="concert">
                     <div class="popup-text">
                         <div class="popup-name">The Park at Wild Horse Pass</div>
                         <div class="popup-place">Chandler, AZ</div>
@@ -251,32 +255,38 @@
                         </div>
                     </div>
                     <button class="popup-close">Close</button>
-            </div>
-    </section>
-    
+        </div>
+        </section>
+        <div class="success border">
+            <div class="success-content">Thank you for your purchase.<br> See you!</div>
+        </div>
+    </main>
     <footer class="footer" id="contacts">
         <div class="container">
-                <div class="footer-content">
-                    <div class="logo"><img src="img/logo.png" alt=""></div>
-                    <div class="contacts">
-                        <div class="contacts-title">Artist Management:<br>EMAIL:</div>
-                        <div class="contacts-data">Jake Henny<br>jake@brightlightsofficial.com</div>
-                    </div>
-                    <ul class="footer-icons">
-                        <li class="footer-icon"><a href="https://www.apple.com/ru/itunes/" target="_blank"><img src="./img/appleFooter.svg" alt=""></a></li>
-                        <li class="footer-icon"><a href="https://open.spotify.com/" target="_blank"><img src="./img/spotifyFooter.svg" alt=""></a></li>
-                        <li class="footer-icon"><a href="https://www.instagram.com/" target="_blank"><img src="./img/instagram.svg" alt=""></a></li>
-                        <li class="footer-icon"><a href="https://www.youtube.com/" target="_blank"><img src="./img/youtube.svg" alt=""></a></li>
-                        <li class="footer-icon"><a href="https://twitter.com/" target="_blank"><img src="./img/twitter.svg" alt=""></a></li>
-                        <li class="footer-icon"><a href="https://facebook.com/" target="_blank"><img src="./img/fb.svg" alt=""></a></li>
-                    </ul>
-                    <div class="copyright">©  2023 DJ bright lights.</div>
+            <div class="footer-content">
+                <div class="logo"><img data-aos="flip-left" data-aos-duration="2000" src="img/logo.png" alt="logo"></div>
+                <div class="contacts">
+                    <div class="contacts-title">Artist Management:<br>EMAIL:</div>
+                    <div class="contacts-data">Jake Henny<br>jake@brightlightsofficial.com</div>
                 </div>
+                <ul data-aos="fade-right" data-aos-duration="2000" class="footer-icons">
+                    <li class="footer-icon"><a href="https://www.apple.com/ru/itunes/" target="_blank"><img src="./img/appleFooter.svg" alt="apple"></a></li>
+                    <li class="footer-icon"><a href="https://open.spotify.com/" target="_blank"><img src="./img/spotifyFooter.svg" alt="spotify"></a></li>
+                    <li class="footer-icon"><a href="https://www.instagram.com/" target="_blank"><img src="./img/instagram.svg" alt="instagram"></a></li>
+                    <li class="footer-icon"><a href="https://www.youtube.com/" target="_blank"><img src="./img/youtube.svg" alt="youtube"></a></li>
+                    <li class="footer-icon"><a href="https://twitter.com/" target="_blank"><img src="./img/twitter.svg" alt="twitter"></a></li>
+                    <li class="footer-icon"><a href="https://facebook.com/" target="_blank"><img src="./img/fb.svg" alt="facebook"></a></li>
+                </ul>
+                <div class="copyright">©  2023 DJ bright lights.</div>
             </div>
-        </footer>
-    </main>
-    <div class="cursor"></div>
+        </div>
+    </footer>
+    
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
 

@@ -1,7 +1,3 @@
-html {
-    max-width: 1920px;
-    margin: 0 auto;  
-}
 body {
     font-family: 'Poppins', sans-serif;
     background-image: url(/img/header.jpg);
@@ -120,7 +116,6 @@ body {
     padding-bottom: 20px;
 }
 
-
   /* HEADER  */
 
 
@@ -139,6 +134,16 @@ body {
     font-weight: 700;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px;
+    animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-5px);
+    }
 }
 
 
@@ -152,7 +157,7 @@ body {
 }
 .audio-btn {
     cursor: pointer;
-    min-width: 25px;
+    width: 27px;
     transition: 0.15s ease-in;
 }
 .audio-btn:hover {
@@ -181,7 +186,7 @@ body {
     transform: scaleY(1.3);
 }
 .time {
-    width: 109px;
+    width: 80px;
     white-space: nowrap;
 }
 
@@ -415,6 +420,24 @@ body {
 }
 
 
+
+/* VIDEO */
+
+.video {
+    padding-top: 120px;
+}
+.video-title {
+    padding-bottom: 60px;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+}
+.video-player{
+    max-width: 1100px; 
+    width: 100%;
+}
+
+
 /* TICKETS */
 
 
@@ -495,6 +518,7 @@ body {
     left: 0;
     background-color: rgba(176, 153, 153, 0.2);
     position: fixed;
+    z-index: 1000;
 }
 .popup {
     display: flex;
@@ -565,6 +589,21 @@ body {
 
 }
 
+.success {
+    display: block;
+    opacity: 0;
+    bottom: 10px;
+    position: fixed;
+    background-color: #353535;
+    z-index: 1000;
+    transition: all 1s ease-in;
+}
+.success-content {
+    padding: 15px 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #bfffc8b7;
+}
 
 /* FOOTER  */
 

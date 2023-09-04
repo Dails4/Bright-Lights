@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", function() {
+
 // Numbers
 const numbers = document.querySelectorAll('.tracks-list-item');
 
@@ -46,25 +48,25 @@ songs.forEach((song, index) => {
   });
 });
 
-function playSong(elem, i) {
+function playSong() {
   playBtns.forEach((elem) => elem.classList.add('play'));
   imgSrcs.forEach((elem) => elem.src = 'img/pause.png');
   audio.play();
 }
 
-function stopSong(elem, i) {
+function stopSong() {
   playBtns.forEach((elem) => elem.classList.remove('play'));
   imgSrcs.forEach((elem) => elem.src = 'img/play.svg');
   audio.pause();
 }
- 
+
 playBtns.forEach((elem, i) => {
   elem.addEventListener('click', () => {
     const isPlaying = elem.classList.contains('play');
     if (isPlaying) {
-        stopSong(elem, i);
+        stopSong();
     } else {
-        playSong(elem, i);
+        playSong();
     }
   });
 });
@@ -108,6 +110,19 @@ progressContainer.forEach((elem) => {
   elem.addEventListener('mousedown', setProgress);
 });
 
+//video
+
+const video = document.querySelector('.video-player')
+const videoPosition = video.getBoundingClientRect().top;
+const windowHeight = window.innerHeight;
+
+window.addEventListener("scroll", function() {
+  if (videoPosition < windowHeight) {
+    video.play();
+  }
+});
+
+
 // slider
 
 const prevBtn = document.querySelector('.prev-btn');
@@ -115,7 +130,6 @@ const nextBtn = document.querySelector('.next-btn');
 const slider = document.querySelector('.slider');
 const sliderWrap = document.querySelector('.concert-list');
 const items = document.querySelectorAll('.concert-item');
-// let windowSize = window.innerWidth;
 let position = 0;
 let visSlides = checkWidth();
 let scrollSlides = 1;
@@ -147,7 +161,6 @@ const disableBtn = () => {
   prevBtn.disabled = position === 0;
   nextBtn.disabled = position <= -(items.length - visSlides) * itemWidth;
 };
-disableBtn();
 
 function checkWidth() {
 if (slider.clientWidth <= 600) {
@@ -156,13 +169,11 @@ if (slider.clientWidth <= 600) {
   return 2;
 } else return 3;
 }
-checkWidth()
 
 // popup
 
 const sliderItems = document.querySelectorAll('.concert-item');
 const wrap = document.querySelector('.popup-wrap');
-const popup = document.querySelector('.popup');
 const concertImg = document.querySelectorAll('.concert-item img');
 const concertName = document.querySelectorAll('.concert-name');
 const concertPlace = document.querySelectorAll('.concert-place');
@@ -171,8 +182,11 @@ const popupImg = document.querySelector('.img-popup');
 const popupName = document.querySelector('.popup-name');
 const popupPlace = document.querySelector('.popup-place');
 const popupDate = document.querySelector('.popup-date');
-const popupInput = document.querySelectorAll('.popup-input')
+const popupInput = document.querySelectorAll('.popup-input');
 const popupCloseButton = document.querySelector('.popup-close');
+const popupBook = document.querySelector('.popup-book');
+const success = document.querySelector('.success');
+
 
 sliderItems.forEach((elem, i) => {
   elem.addEventListener('click', () => {
@@ -186,7 +200,14 @@ sliderItems.forEach((elem, i) => {
 
 function closePopup() {
   wrap.style.display = 'none';
+  popupInput.forEach(e => e.value = '')
+  popupInput[0].style.borderColor = '#6e6d6d';
 };
+function onSuccess() {
+  closePopup()
+  success.style.opacity = 1;
+  setTimeout(() => success.style.opacity = 0, 4000)
+}
 
 wrap.addEventListener('click', (event) => {
   let target = event.target;
@@ -196,11 +217,13 @@ wrap.addEventListener('click', (event) => {
   } 
 });
 popupCloseButton.addEventListener('click', closePopup);
+popupBook.addEventListener('click', onSuccess);
 
 popupInput[1].addEventListener('input', (elem, i) => {
+  popupInput[1].value = popupInput[1].value.replace(/[^0-9]/g, '');
   if (popupInput[1].value >= 100){
     popupInput[1].value = 99;
-    alert('You can\'t buy more than 99 tickets')
+    alert('You can\'t buy more than 99 tickets');
     popupInput[2].value = popupInput[1].value * 20 + '$';
   } else {
     popupInput[2].value = popupInput[1].value * 20 + '$';
@@ -225,7 +248,7 @@ function isEmailValid(value) {
   return EMAIL_REGEXP.test(value);
 }
 
-
+});
 // cursor
 
 
