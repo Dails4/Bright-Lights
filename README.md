@@ -3,6 +3,7 @@
 Website
 
 What’s implemented in it:
+
 • User-friendly audio player with advanced features
 
 • Animations of varying complexity
