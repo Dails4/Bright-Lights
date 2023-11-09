@@ -186,7 +186,9 @@ function updateProgress() {
   const popupCloseButton = document.querySelector('.popup-close');
   const popupBook = document.querySelector('.popup-book');
   const success = document.querySelector('.success');
+  const successContent = document.querySelector('.success-content');
 
+  const EMAIL_REGEXP = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
 
   sliderItems.forEach((elem, i) => {
     elem.addEventListener('click', () => {
@@ -204,6 +206,13 @@ function updateProgress() {
     popupInput[0].style.borderColor = '#6e6d6d';
   };
   function onSuccess() {
+    if (!isEmailValid(popupInput[0].value)){
+      successContent.textContent = 'Incorrect Email😕';
+      successContent.style.color = '#9e3f3f';
+    } else {
+      successContent.textContent = 'Check your Email🫡';
+      successContent.style.color = '#bfffc8b7';
+    }
     closePopup()
     success.style.opacity = 1;
     setTimeout(() => success.style.opacity = 0, 4000)
@@ -223,7 +232,7 @@ function updateProgress() {
     popupInput[1].value = popupInput[1].value.replace(/[^0-9]/g, '');
     if (popupInput[1].value >= 100){
       popupInput[1].value = 99;
-      alert('You can\'t buy more than 99 tickets');
+      
       popupInput[2].value = popupInput[1].value * 20 + '$';
     } else {
       popupInput[2].value = popupInput[1].value * 20 + '$';
@@ -231,8 +240,6 @@ function updateProgress() {
   });
 
   // EmailValidation
-
-  const EMAIL_REGEXP = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
 
   function onInput() {
     if (isEmailValid(popupInput[0].value)) {
